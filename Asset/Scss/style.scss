@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --primary-color: rgba(255, 255, 255, 0.938);
+  --secondary-color: rgba(0, 0, 0, 0.89);
+  --color-link: #bac964;
+}
+
+// --------------- PAGE HEADER -------------------- //
+
+.page-header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./Images/IMG_0413.JPG);
+  background-position: center;
+  background-size: cover;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+    justify-content: center;
+
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      width: 40%;
+      justify-content: space-between;
+      list-style: none;
+
+      .nav-link {
+        text-transform: uppercase;
+        cursor: pointer;
+        color: var(--primary-color);
+        transition: color 0.4s;
+        text-decoration: none;
+      }
+
+      .nav-link:hover {
+        color: var(--color-link);
+      }
+      .nav-link:focus {
+        color: var(--color-link);
+      }
+    }
+  }
+
+  .page-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13rem;
+    color: var(--primary-color);
+
+    .introduction {
+      font-size: 60px;
+      font-weight: 400;
+      letter-spacing: 0.2rem;
+    }
+
+    .my-name {
+      font-size: 100px;
+      font-weight: 800;
+    }
+
+    .intro-title {
+      letter-spacing: 0.2rem;
+    }
+  }
+}
+
+// ------------------- PAGE HEADER END ------------------- \\
