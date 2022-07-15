@@ -339,4 +339,139 @@
 .myskills .skill-list .language-icons .language-icon .icon-cont .icon-sass {
   color: #FD7088;
 }
+
+.my-projects {
+  background-color: var(--secondary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+}
+
+.my-projects .project-header {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.my-projects .project-sort-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.my-projects .project-sort-list .project-sort {
+  color: var(--primary-color);
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.my-projects .project-sort-list .project-sort:hover {
+  color: var(--color-link);
+}
+
+.my-projects .project-sort-list .project-sort:focus {
+  color: var(--color-link);
+}
+
+.my-projects .projects-list {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.my-projects .projects-list .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 30%;
+}
+
+.my-projects .projects-list .projects .project-image {
+  width: 375px;
+  height: 300px;
+  border-radius: 2rem;
+}
+
+.my-projects .projects-list .projects .project-name {
+  color: var(--color-link);
+}
+
+.my-projects .projects-list .projects .project-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.my-projects .projects-list .projects .project-cta .view {
+  padding: .3rem .9rem;
+  border: none;
+  outline: none;
+  border-radius: .7rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.my-projects .projects-list .projects .project-cta .view:hover {
+  background-color: var(--color-link);
+}
+
+.my-projects .projects-list .projects .project-cta .view:focus {
+  background-color: var(--color-link);
+}
+
+.my-projects .projects-list .projects .project-cta .code {
+  padding: .3rem .9rem;
+  border: none;
+  outline: none;
+  border-radius: .7rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.my-projects .projects-list .projects .project-cta .code:hover {
+  background-color: var(--color-link);
+}
+
+.my-projects .projects-list .projects .project-cta .code:focus {
+  background-color: var(--color-link);
+}
+
+.my-projects .projects-list .projects .tools {
+  color: var(--primary-color);
+}
 /*# sourceMappingURL=style.css.map */

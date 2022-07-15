@@ -253,3 +253,111 @@
 
 
 // -----------------------My Skill End -----------------\\
+
+
+
+.my-projects{
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+
+
+  .project-header{
+    font-size: 40px;
+    color: var(--primary-color);
+  }
+
+
+  .project-sort-list{
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+
+
+    .project-sort{
+      color: var(--primary-color);
+      cursor: pointer;
+      transition: all .3s;
+    }
+
+    .project-sort:hover{
+      color: var(--color-link);
+    }
+    .project-sort:focus{
+      color: var(--color-link);
+    }
+  }
+
+  .projects-list{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    .projects{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 30%;
+
+
+      .project-image{
+        width: 375px;
+        height: 300px;
+        border-radius: 2rem;
+      }
+
+      .project-name{
+        color: var(--color-link);
+      }
+
+      .project-cta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+
+        .view{
+          padding: .3rem .9rem;
+          border: none;
+          outline: none;
+          border-radius: .7rem;
+          transition: all .3s;
+          cursor: pointer;
+        }
+
+        .view:hover{
+          background-color: var(--color-link);
+        }
+        .view:focus{
+          background-color: var(--color-link);
+        }
+
+
+        .code{
+          padding: .3rem .9rem;
+          border: none;
+          outline: none;
+          border-radius: .7rem;
+          transition: all .3s;
+          cursor: pointer;
+        }
+
+        .code:hover{
+          background-color: var(--color-link);
+        }
+        .code:focus{
+          background-color: var(--color-link);
+        }
+      }
+
+      .tools{
+        color: var(--primary-color);
+      }
+    }
+  }
+}
