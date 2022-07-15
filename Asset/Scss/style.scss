@@ -2,13 +2,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -16,8 +17,6 @@
   --secondary-color: rgba(0, 0, 0, 0.89);
   --color-link: #bac964;
 }
-
-
 
 // --------------- PAGE HEADER -------------------- //
 
@@ -59,6 +58,11 @@
     }
   }
 
+  .fixed-navbar {
+    position: fixed;
+    width: 100%;
+  }
+
   .page-intro {
     display: flex;
     flex-direction: column;
@@ -85,11 +89,9 @@
 
 // ------------------- PAGE HEADER END ------------------- \\
 
-
-
 // --------------------My Skill ----------------------\\
 
-.myskills {
+#myskills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,7 +114,7 @@
 
     .skill-list-header {
       font-size: 30px;
-      font-family: 'Source Sans Pro', sans-serif;
+      font-family: "Source Sans Pro", sans-serif;
       font-weight: 400;
     }
 
@@ -135,247 +137,240 @@
         height: 10px;
         background-color: var(--color-link);
       }
-
     }
 
-      .language-icons {
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        // justify-content: space-between;
-        gap: 4rem;
-        margin-left: 1.5rem;
+    .language-icons {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      // justify-content: space-between;
+      gap: 4rem;
+      margin-left: 1.5rem;
 
-        .language-icon {
-          .language-name {
-            text-align: center;
-            font-weight: 400;
-            font-family: "Montserrat", sans-serif;
-            font-size: 18px;
+      .language-icon {
+        .language-name {
+          text-align: center;
+          font-weight: 400;
+          font-family: "Montserrat", sans-serif;
+          font-size: 18px;
+        }
+
+        .icon-cont {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .circle1 {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px;
+            border-color: transparent;
+            border-left: var(--color-link);
+            border-style: solid;
+            position: relative;
+            animation-name: circle1;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
           }
 
-          .icon-cont {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+          @keyframes circle1 {
+            100% {
+              transform: rotate(360deg);
+            }
+          }
 
-            .circle1 {
-              width: 80px;
-              height: 80px;
-              border-radius: 50%;
-              border: 2px;
-              border-color: transparent;
-              border-left: var(--color-link);
-              border-style: solid;
-              position: relative;
-              animation-name: circle1;
-              animation-duration: 5s;
-              animation-timing-function: linear;
-              animation-iteration-count: infinite;
-            }
+          .html-circle {
+            animation-duration: 6s;
+          }
 
-            @keyframes circle1 {
-              100% {
-                transform: rotate(360deg);
-              }
-            }
+          .js-circle {
+            animation-duration: 5s;
+          }
+          .css-circle {
+            animation-duration: 4s;
+          }
 
-            .html-circle{
-              animation-duration: 6s;
-            }
+          .circle2 {
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            border: 2px;
+            border-color: transparent;
+            border-left: rgb(82, 235, 22);
+            border-style: solid;
+            position: absolute;
+            animation-name: circle2;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
 
-            .js-circle{
-              animation-duration: 5s;
+          @keyframes circle2 {
+            50% {
+              transform: rotate(-180deg);
             }
-            .css-circle{
-              animation-duration: 4s;
+            100% {
+              transform: rotate(360deg);
             }
+          }
 
-            .circle2 {
-              width: 95px;
-              height: 95px;
-              border-radius: 50%;
-              border: 2px;
-              border-color: transparent;
-              border-left: rgb(82, 235, 22);
-              border-style: solid;
-              position: absolute;
-              animation-name: circle2;
-              animation-timing-function: linear;
-              animation-iteration-count: infinite;
-            }
+          .icon {
+            position: absolute;
+            font-size: 50px;
+            animation: rotateicon 4s linear infinite;
+          }
 
-            @keyframes circle2 {
-              50%{
-                transform: rotate(-180deg);
-              }
-              100% {
-                transform: rotate(360deg);
-              }
+          @keyframes rotateicon {
+            100% {
+              transform: perspective(50rem) rotateY(360deg);
             }
+          }
 
-            .icon {
-              position: absolute;
-              font-size: 50px;
-              animation: rotateicon 4s linear infinite;
-            }
-
-            @keyframes rotateicon {
-              100% {
-                transform: perspective(50rem) rotateY(360deg);
-              }
-            }
-
-            .icon-html{
-              color: #e34c26;
-            }
-            .icon-css{
-              color: #2965F1;
-            }
-            .icon-js{
-              color: #F0DB4F;
-            }
-            .icon-react{
-              color: #34C5FF;
-            }
-            .icon-git{
-              color: #F1502F;
-            }
-            .icon-sass{
-              color: #FD7088;
-            }
+          .icon-html {
+            color: #e34c26;
+          }
+          .icon-css {
+            color: #2965f1;
+          }
+          .icon-js {
+            color: #f0db4f;
+          }
+          .icon-react {
+            color: #34c5ff;
+          }
+          .icon-git {
+            color: #f1502f;
+          }
+          .icon-sass {
+            color: #fd7088;
           }
         }
       }
+    }
   }
 }
 
-
 // -----------------------My Skill End -----------------\\
 
+// --------------------My Projects --------------------- //
 
-
-.my-projects{
+#my-projects {
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 5rem;
 
-
-  .project-header{
+  .project-header {
     font-size: 40px;
     color: var(--primary-color);
   }
 
-
-  .project-sort-list{
+  .project-sort-list {
     display: flex;
     gap: 2.5rem;
     list-style: none;
 
-
-    .project-sort{
+    .project-sort {
       color: var(--primary-color);
       cursor: pointer;
-      transition: all .3s;
+      transition: all 0.3s;
     }
 
-    .project-sort:hover{
+    .project-sort:hover {
       color: var(--color-link);
     }
-    .project-sort:focus{
+    .project-sort:focus {
       color: var(--color-link);
     }
   }
 
-  .projects-list{
+  .projects-list {
     width: 90%;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     flex-wrap: wrap;
 
-    .projects{
+    .projects {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       width: 30%;
 
-
-      .image{
+      .image {
         display: flex;
         align-items: center;
       }
 
-
-      .project-image{
+      .project-image {
         width: 375px;
         height: 300px;
         border-radius: 2rem;
         position: relative;
       }
 
-//-------- USE FOR HOVERING EFFECT WITH JAVASCRIPT
+      //-------- USE FOR HOVERING EFFECT WITH JAVASCRIPT
 
-      .image-overlay{
+      .image-overlay {
         position: absolute;
         width: 375px;
         height: 300px;
         border-radius: 2rem;
         background-color: var(--color-link);
-        opacity: .5;
+        opacity: 0.5;
       }
 
-      .project-name{
+      .project-name {
         color: var(--color-link);
       }
 
-      .project-cta{
+      .project-cta {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 1rem;
 
-
-        .view{
-          padding: .3rem .9rem;
+        .view {
+          padding: 0.3rem 0.9rem;
           border: none;
           outline: none;
-          border-radius: .7rem;
-          transition: all .3s;
+          border-radius: 0.7rem;
+          transition: all 0.3s;
           cursor: pointer;
         }
 
-        .view:hover{
+        .view:hover {
           background-color: var(--color-link);
         }
-        .view:focus{
+        .view:focus {
           background-color: var(--color-link);
         }
 
-
-        .code{
-          padding: .3rem .9rem;
+        .code {
+          padding: 0.3rem 0.9rem;
           border: none;
           outline: none;
-          border-radius: .7rem;
-          transition: all .3s;
+          border-radius: 0.7rem;
+          transition: all 0.3s;
           cursor: pointer;
         }
 
-        .code:hover{
+        .code:hover {
           background-color: var(--color-link);
         }
-        .code:focus{
+        .code:focus {
           background-color: var(--color-link);
         }
       }
 
-      .tools{
+      .tools {
         color: var(--primary-color);
       }
     }
   }
 }
+
+// --------------------- My Projects End -------------------\\
