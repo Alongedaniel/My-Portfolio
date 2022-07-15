@@ -411,10 +411,29 @@
   width: 30%;
 }
 
+.my-projects .projects-list .projects .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .my-projects .projects-list .projects .project-image {
   width: 375px;
   height: 300px;
   border-radius: 2rem;
+  position: relative;
+}
+
+.my-projects .projects-list .projects .image-overlay {
+  position: absolute;
+  width: 375px;
+  height: 300px;
+  border-radius: 2rem;
+  background-color: var(--color-link);
+  opacity: .5;
 }
 
 .my-projects .projects-list .projects .project-name {
