@@ -221,7 +221,6 @@
           .icon {
             position: absolute;
             font-size: 50px;
-            animation: rotateicon 4s linear infinite;
           }
 
           @keyframes rotateicon {
@@ -229,24 +228,35 @@
               transform: perspective(50rem) rotateY(360deg);
             }
           }
+          @keyframes rotateicon2 {
+            100% {
+              transform: rotate(360deg);
+            }
+          }
 
           .icon-html {
             color: #e34c26;
+            animation: rotateicon 4s linear infinite;
           }
           .icon-css {
             color: #2965f1;
+            animation: rotateicon 4s linear infinite;
           }
           .icon-js {
             color: #f0db4f;
+            animation: rotateicon 4s linear infinite;
           }
           .icon-react {
             color: #34c5ff;
+            animation: rotateicon2 4s linear infinite;
           }
           .icon-git {
             color: #f1502f;
+            animation: rotateicon2 4s linear infinite;
           }
           .icon-sass {
             color: #fd7088;
+            animation: rotateicon 4s linear infinite;
           }
         }
       }
@@ -295,14 +305,13 @@
     flex-direction: row;
     gap: 1rem;
     flex-wrap: wrap;
-    justify-content: center;
 
     .projects {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       width: 30%;
-      gap: 0.8rem;
+
 
       .image {
         display: flex;
@@ -314,6 +323,7 @@
         height: 245px;
         border-radius: 2rem;
         position: relative;
+        margin-bottom: .8rem;
       }
 
       //-------- USE FOR HOVERING EFFECT WITH JAVASCRIPT
@@ -327,10 +337,12 @@
         background-color: var(--color-link);
         opacity: 0.5;
         z-index: 2;
+        margin-bottom: .8rem;
       }
 
       .project-name {
         color: var(--color-link);
+        margin-bottom: .8rem;
       }
 
       .project-cta {
@@ -338,6 +350,7 @@
         flex-direction: row;
         align-items: center;
         gap: 1rem;
+        margin-bottom: .8rem;
 
         .view {
           padding: 0.3rem 0.9rem;
@@ -374,6 +387,7 @@
 
       .tools {
         color: var(--text-color-dark);
+        margin-bottom: .8rem;
       }
     }
   }

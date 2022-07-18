@@ -306,8 +306,6 @@
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon {
   position: absolute;
   font-size: 50px;
-  -webkit-animation: rotateicon 4s linear infinite;
-          animation: rotateicon 4s linear infinite;
 }
 
 @-webkit-keyframes rotateicon {
@@ -324,28 +322,54 @@
   }
 }
 
+@-webkit-keyframes rotateicon2 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateicon2 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon-html {
   color: #e34c26;
+  -webkit-animation: rotateicon 4s linear infinite;
+          animation: rotateicon 4s linear infinite;
 }
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon-css {
   color: #2965f1;
+  -webkit-animation: rotateicon 4s linear infinite;
+          animation: rotateicon 4s linear infinite;
 }
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon-js {
   color: #f0db4f;
+  -webkit-animation: rotateicon 4s linear infinite;
+          animation: rotateicon 4s linear infinite;
 }
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon-react {
   color: #34c5ff;
+  -webkit-animation: rotateicon2 4s linear infinite;
+          animation: rotateicon2 4s linear infinite;
 }
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon-git {
   color: #f1502f;
+  -webkit-animation: rotateicon2 4s linear infinite;
+          animation: rotateicon2 4s linear infinite;
 }
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon-sass {
   color: #fd7088;
+  -webkit-animation: rotateicon 4s linear infinite;
+          animation: rotateicon 4s linear infinite;
 }
 
 #my-projects {
@@ -403,9 +427,6 @@
   gap: 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 #my-projects .projects-list .projects {
@@ -420,7 +441,6 @@
       -ms-flex-align: start;
           align-items: flex-start;
   width: 30%;
-  gap: 0.8rem;
 }
 
 #my-projects .projects-list .projects .image {
@@ -437,6 +457,7 @@
   height: 245px;
   border-radius: 2rem;
   position: relative;
+  margin-bottom: .8rem;
 }
 
 #my-projects .projects-list .projects .image:hover::before {
@@ -448,10 +469,12 @@
   background-color: var(--color-link);
   opacity: 0.5;
   z-index: 2;
+  margin-bottom: .8rem;
 }
 
 #my-projects .projects-list .projects .project-name {
   color: var(--color-link);
+  margin-bottom: .8rem;
 }
 
 #my-projects .projects-list .projects .project-cta {
@@ -466,6 +489,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
+  margin-bottom: .8rem;
 }
 
 #my-projects .projects-list .projects .project-cta .view {
@@ -506,5 +530,6 @@
 
 #my-projects .projects-list .projects .tools {
   color: var(--text-color-dark);
+  margin-bottom: .8rem;
 }
 /*# sourceMappingURL=style.css.map */
