@@ -11,9 +11,11 @@
 }
 
 :root {
-  --primary-color: rgba(255, 255, 255, 0.938);
+  --primary-color: rgb(231, 224, 224);
   --secondary-color: rgba(0, 0, 0, 0.89);
-  --color-link: #bac964;
+  --text-color-light: #fff;
+  --color-link: #758808;
+  --text-color-dark: #000;
 }
 
 .page-header {
@@ -56,7 +58,7 @@
 .page-header .navbar .nav-links .nav-link {
   text-transform: uppercase;
   cursor: pointer;
-  color: var(--primary-color);
+  color: var(--text-color-light);
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
   text-decoration: none;
@@ -87,7 +89,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 13rem;
-  color: var(--primary-color);
+  color: var(--text-color-light);
 }
 
 .page-header .page-intro .introduction {
@@ -119,9 +121,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding-top: 5rem;
-  color: var(--primary-color);
+  color: var(--text-color-dark);
 }
 
 #myskills .myskills-header {
@@ -347,7 +349,7 @@
 }
 
 #my-projects {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,7 +365,7 @@
 
 #my-projects .project-header {
   font-size: 40px;
-  color: var(--primary-color);
+  color: var(--text-color-dark);
 }
 
 #my-projects .project-sort-list {
@@ -375,7 +377,7 @@
 }
 
 #my-projects .project-sort-list .project-sort {
-  color: var(--primary-color);
+  color: var(--text-color-dark);
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -390,7 +392,7 @@
 }
 
 #my-projects .projects-list {
-  width: 90%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,9 +400,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #my-projects .projects-list .projects {
@@ -415,6 +420,7 @@
       -ms-flex-align: start;
           align-items: flex-start;
   width: 30%;
+  gap: 0.8rem;
 }
 
 #my-projects .projects-list .projects .image {
@@ -427,19 +433,21 @@
 }
 
 #my-projects .projects-list .projects .project-image {
-  width: 375px;
-  height: 300px;
+  width: 320px;
+  height: 245px;
   border-radius: 2rem;
   position: relative;
 }
 
-#my-projects .projects-list .projects .image-overlay {
+#my-projects .projects-list .projects .image:hover::before {
+  content: '';
   position: absolute;
-  width: 375px;
-  height: 300px;
+  width: 320px;
+  height: 245px;
   border-radius: 2rem;
   background-color: var(--color-link);
   opacity: 0.5;
+  z-index: 2;
 }
 
 #my-projects .projects-list .projects .project-name {
@@ -497,6 +505,6 @@
 }
 
 #my-projects .projects-list .projects .tools {
-  color: var(--primary-color);
+  color: var(--text-color-dark);
 }
 /*# sourceMappingURL=style.css.map */
