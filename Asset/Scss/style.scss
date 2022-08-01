@@ -504,7 +504,7 @@ body {
   }
 
   @media (max-width: 970px) {
-    .my-projects{
+    .my-projects {
       padding-bottom: 3rem;
     }
     .project-image {
@@ -520,8 +520,6 @@ body {
 }
 
 // --------------------- My Projects End -------------------\\
-
-
 
 // --------------------- Mobile navbar -------------------\\
 
@@ -564,9 +562,6 @@ body {
 }
 
 // --------------------- Mobile navbar end -------------------\\
-
-
-
 
 // --------------------- About -------------------\\
 
@@ -655,23 +650,21 @@ body {
   }
 }
 
-@media (max-width:800px) {
-  #about{
+@media (max-width: 800px) {
+  #about {
     flex-direction: column;
     align-items: center;
 
-    .my-image{
+    .my-image {
       display: none;
     }
 
-    .about-text{
+    .about-text {
       width: 90%;
       // text-align: center;
       align-items: center;
     }
   }
 }
-
-
 
 // --------------------- About end -------------------\\
