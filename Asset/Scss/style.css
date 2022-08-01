@@ -497,7 +497,7 @@ body {
   border-radius: 2rem;
   background-color: var(--color-link);
   opacity: 0.5;
-  z-index: 2;
+  z-index: 4;
   margin-bottom: .8rem;
 }
 
