@@ -28,16 +28,7 @@
 }
 
 .page-header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 3rem 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 3rem 20vw;
 }
 
 .page-header .navbar .nav-links {
@@ -48,11 +39,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 40%;
+  list-style: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  list-style: none;
 }
 
 .page-header .navbar .nav-links .nav-link {
@@ -70,6 +60,62 @@
 
 .page-header .navbar .nav-links .nav-link:focus {
   color: var(--color-link);
+}
+
+.page-header .navbar .mobile-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-header .navbar .mobile-navbar .bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.page-header .navbar .mobile-navbar .bars .bar {
+  width: 30px;
+  height: 3px;
+  background-color: var(--text-color-dark);
+  margin: .2rem 0;
+  border-radius: 10rem;
+}
+
+.page-header .navbar .mobile-navbar .bars .middle-bar {
+  width: 25px;
+}
+
+.page-header .navbar .mobile-navbar .bars .last-bar {
+  width: 20px;
+}
+
+@media (min-width: 700px) {
+  .page-header .mobile-navbar {
+    display: none !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-header .navbar {
+    padding: 3rem 10vw;
+  }
+  .page-header .navbar .nav-links {
+    display: none !important;
+  }
 }
 
 .page-header .fixed-navbar {
@@ -105,6 +151,15 @@
 
 .page-header .page-intro .intro-title {
   letter-spacing: 0.2rem;
+}
+
+@media (max-width: 690px) {
+  .page-header .page-intro .introduction {
+    font-size: 30px;
+  }
+  .page-header .page-intro .my-name {
+    font-size: 50px;
+  }
 }
 
 #myskills {
@@ -155,7 +210,6 @@
 }
 
 #myskills .skill-list .skill-in {
-  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,7 +236,6 @@
 }
 
 #myskills .skill-list .language-icons {
-  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,6 +251,7 @@
 }
 
 #myskills .skill-list .language-icons .language-icon .language-name {
+  margin-top: .2rem;
   text-align: center;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
@@ -211,100 +265,34 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .circle1 {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 2px;
-  border-color: transparent;
-  border-left: var(--color-link);
-  border-style: solid;
-  position: relative;
-  -webkit-animation-name: circle1;
-          animation-name: circle1;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  width: 55px;
+  height: 3px;
+  background-color: var(--color-link);
+  margin-top: .3rem;
+  -webkit-animation: line .6s linear infinite;
+          animation: line .6s linear infinite;
 }
 
-@-webkit-keyframes circle1 {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes circle1 {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-#myskills .skill-list .language-icons .language-icon .icon-cont .html-circle {
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-}
-
-#myskills .skill-list .language-icons .language-icon .icon-cont .js-circle {
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-}
-
-#myskills .skill-list .language-icons .language-icon .icon-cont .css-circle {
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-}
-
-#myskills .skill-list .language-icons .language-icon .icon-cont .circle2 {
-  width: 95px;
-  height: 95px;
-  border-radius: 50%;
-  border: 2px;
-  border-color: transparent;
-  border-left: #52eb16;
-  border-style: solid;
-  position: absolute;
-  -webkit-animation-name: circle2;
-          animation-name: circle2;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes circle2 {
+@-webkit-keyframes line {
   50% {
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    background-color: #52eb16;
   }
 }
 
-@keyframes circle2 {
+@keyframes line {
   50% {
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    background-color: #52eb16;
   }
 }
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon {
-  position: absolute;
   font-size: 50px;
 }
 
@@ -372,6 +360,44 @@
           animation: rotateicon 4s linear infinite;
 }
 
+@media (max-width: 800px) {
+  #myskills {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #myskills .skill-list {
+    width: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #myskills .skill-list .skill-in {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 0;
+  }
+  #myskills .skill-list .skill-in .skill {
+    margin-bottom: 1rem;
+  }
+  #myskills .skill-list .skill-in .skill-level {
+    width: 250px;
+  }
+  #myskills .skill-list .language-icons {
+    margin-left: 0;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 #my-projects {
   background-color: var(--primary-color);
   display: -webkit-box;
@@ -384,7 +410,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 5rem;
+  padding: 5rem 5vw;
 }
 
 #my-projects .project-header {
@@ -416,15 +442,12 @@
 }
 
 #my-projects .projects-list {
-  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -437,10 +460,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 1rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 30%;
 }
 
 #my-projects .projects-list .projects .image {
@@ -531,5 +554,16 @@
 #my-projects .projects-list .projects .tools {
   color: var(--text-color-dark);
   margin-bottom: .8rem;
+}
+
+@media (max-width: 970px) {
+  #my-projects .project-image {
+    width: 245px !important;
+    height: 170px !important;
+  }
+  #my-projects .image:hover::before {
+    width: 245px !important;
+    height: 170px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
