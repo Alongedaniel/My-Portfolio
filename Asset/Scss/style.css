@@ -627,7 +627,7 @@ body {
   }
 }
 
-.about {
+#about {
   padding: 2rem 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -642,13 +642,13 @@ body {
   gap: 2rem;
 }
 
-.about .my-image {
+#about .my-image {
   width: 50%;
   border-radius: 0.5rem;
   height: 100%;
 }
 
-.about .about-text {
+#about .about-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -663,11 +663,11 @@ body {
   line-height: 2rem;
 }
 
-.about .about-text .about-title {
+#about .about-text .about-title {
   color: var(--text-color-dark);
 }
 
-.about .about-text .line {
+#about .about-text .line {
   width: 50px;
   height: 5px;
   background-color: var(--color-link);
@@ -675,18 +675,18 @@ body {
   border-radius: 0.5rem;
 }
 
-.about .about-text .about-me {
+#about .about-text .about-me {
   color: var(--text-color-dark);
   font-size: 18px;
   font-weight: 500;
 }
 
-.about .about-text .about-me .link-to-projects {
+#about .about-text .about-me .link-to-projects {
   text-decoration: none;
   color: var(--color-link);
 }
 
-.about .about-text .about-cta {
+#about .about-text .about-cta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,7 +697,7 @@ body {
   margin-top: 1rem;
 }
 
-.about .about-text .about-cta .hire-me {
+#about .about-text .about-cta .hire-me {
   padding: 1rem 2rem;
   background-color: var(--color-link);
   border-radius: 1.5rem;
@@ -710,11 +710,11 @@ body {
   font-weight: 500;
 }
 
-.about .about-text .about-cta .hire-me:hover {
+#about .about-text .about-cta .hire-me:hover {
   opacity: 0.8;
 }
 
-.about .about-text .about-cta .contact-me {
+#about .about-text .about-cta .contact-me {
   padding: 1rem 2rem;
   background-color: var(--secondary-color);
   border-radius: 1.5rem;
@@ -727,12 +727,12 @@ body {
   font-weight: 500;
 }
 
-.about .about-text .about-cta .contact-me:hover {
+#about .about-text .about-cta .contact-me:hover {
   opacity: 0.8;
 }
 
 @media (max-width: 800px) {
-  .about {
+  #about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -741,10 +741,10 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .about .my-image {
+  #about .my-image {
     display: none;
   }
-  .about .about-text {
+  #about .about-text {
     width: 90%;
     -webkit-box-align: center;
         -ms-flex-align: center;
