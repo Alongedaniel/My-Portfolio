@@ -24,3 +24,11 @@ selectAll.addEventListener("click", function () {
   appClick.style.color = "#000";
   webClick.style.color = "#000";
 });
+
+
+// let menu = document.querySelector('.bars')
+// let menuBar = document.querySelector('.mobile-nav-links')
+
+// function menuClick() {
+//   menuBar.style.bottom = '0'
+// }

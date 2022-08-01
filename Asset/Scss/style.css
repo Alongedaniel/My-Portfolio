@@ -10,6 +10,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  position: relative;
+}
+
 :root {
   --primary-color: #fff;
   --secondary-color: rgba(0, 0, 0, 0.89);
@@ -111,7 +115,7 @@
 
 @media (max-width: 700px) {
   .page-header .navbar {
-    padding: 3rem 10vw;
+    padding: 1.5rem 5vw;
   }
   .page-header .navbar .nav-links {
     display: none !important;
@@ -154,6 +158,9 @@
 }
 
 @media (max-width: 690px) {
+  .page-header .page-intro {
+    margin-top: 25rem;
+  }
   .page-header .page-intro .introduction {
     font-size: 30px;
   }
@@ -566,6 +573,52 @@
   #my-projects .image:hover::before {
     width: 245px !important;
     height: 170px !important;
+  }
+}
+
+.mobile-nav-links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 5vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--text-color-dark);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  -webkit-box-shadow: 10px 10px 10px var(--secondary-color);
+          box-shadow: 10px 10px 10px var(--secondary-color);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.mobile-nav-links .mobile-nav-link {
+  text-decoration: none;
+  color: var(--text-color-light);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.mobile-nav-links .mobile-nav-link:hover {
+  color: var(--color-link);
+}
+
+.mobile-nav-links .mobile-nav-link:focus {
+  color: var(--color-link);
+}
+
+@media (min-width: 700px) {
+  .mobile-nav-links {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
