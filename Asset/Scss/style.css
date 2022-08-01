@@ -158,9 +158,6 @@ body {
 }
 
 @media (max-width: 690px) {
-  .page-header .page-intro {
-    margin-top: 25rem;
-  }
   .page-header .page-intro .introduction {
     font-size: 30px;
   }
@@ -584,7 +581,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem 5vw;
+  padding: 1rem 5vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
