@@ -7,14 +7,14 @@ let allApp = document.querySelectorAll(".app");
 webClick.addEventListener("click", function () {
   allWeb.forEach((web) => (web.style.display = "inline-block"));
   allApp.forEach((app) => (app.style.display = "none"));
-  webClick.style.color = "#758808";
+  webClick.style.color = "#146ebe";
   appClick.style.color = "#000";
 });
 
 appClick.addEventListener("click", function () {
   allApp.forEach((app) => (app.style.display = "inline-block"));
   allWeb.forEach((web) => (web.style.display = "none"));
-  appClick.style.color = "#758808";
+  appClick.style.color = "#146ebe";
   webClick.style.color = "#000";
 });
 

@@ -15,11 +15,11 @@ body {
 }
 
 :root {
-  --primary-color: #fff;
-  --secondary-color: rgba(0, 0, 0, 0.89);
-  --text-color-light: #fff;
+  --primary-color: rgba(0, 0, 0, 0.89);
+  --secondary-color: #fff;
+  --text-color-light: #000;
   --color-link: #146ebe;
-  --text-color-dark: #000;
+  --text-color-dark: #fff;
 }
 
 .page-header {
@@ -189,6 +189,7 @@ body {
 
 #myskills .myskills-header {
   font-size: 40px;
+  color: var(--color-link);
 }
 
 #myskills .skill-list {
@@ -420,7 +421,7 @@ body {
 
 #my-projects .project-header {
   font-size: 40px;
-  color: var(--text-color-dark);
+  color: var(--color-link);
 }
 
 #my-projects .project-sort-list {
@@ -436,6 +437,7 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  font-weight: 500;
 }
 
 #my-projects .project-sort-list .project-sort:hover {
@@ -640,6 +642,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2rem;
+  background-color: var(--primary-color);
 }
 
 #about .my-image {
@@ -664,7 +667,7 @@ body {
 }
 
 #about .about-text .about-title {
-  color: var(--text-color-dark);
+  color: var(--color-link);
 }
 
 #about .about-text .line {

@@ -17,11 +17,11 @@ body {
 }
 
 :root {
-  --primary-color: #fff;
-  --secondary-color: rgba(0, 0, 0, 0.89);
-  --text-color-light: #fff;
+  --primary-color: rgba(0, 0, 0, 0.89);
+  --secondary-color: #fff;
+  --text-color-light: #000;
   --color-link: #146ebe;
-  --text-color-dark: #000;
+  --text-color-dark: #fff;
 }
 
 // --------------- PAGE HEADER -------------------- //
@@ -162,6 +162,7 @@ body {
 
   .myskills-header {
     font-size: 40px;
+    color: var(--color-link);
   }
 
   .skill-list {
@@ -384,7 +385,7 @@ body {
 
   .project-header {
     font-size: 40px;
-    color: var(--text-color-dark);
+    color: var(--color-link);
   }
 
   .project-sort-list {
@@ -396,6 +397,7 @@ body {
       color: var(--text-color-dark);
       cursor: pointer;
       transition: all 0.3s;
+      font-weight: 500;
     }
 
     .project-sort:hover {
@@ -574,6 +576,7 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
+  background-color: var(--primary-color);
 
   .my-image {
     width: 50%;
@@ -589,7 +592,7 @@ body {
     line-height: 2rem;
 
     .about-title {
-      color: var(--text-color-dark);
+      color: var(--color-link);
     }
 
     .line {
