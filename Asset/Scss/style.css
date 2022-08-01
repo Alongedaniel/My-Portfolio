@@ -15,11 +15,11 @@ body {
 }
 
 :root {
-  --primary-color: rgba(0, 0, 0, 0.89);
-  --secondary-color: #fff;
-  --text-color-light: #000;
+  --primary-color: #fff;
+  --secondary-color: rgba(0, 0, 0, 0.89);
+  --text-color-light: #fff;
   --color-link: #146ebe;
-  --text-color-dark: #fff;
+  --text-color-dark: #000;
 }
 
 .page-header {
