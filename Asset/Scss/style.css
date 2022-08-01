@@ -11,7 +11,7 @@
 }
 
 :root {
-  --primary-color: rgb(231, 224, 224);
+  --primary-color: #fff;
   --secondary-color: rgba(0, 0, 0, 0.89);
   --text-color-light: #fff;
   --color-link: #758808;
@@ -481,6 +481,8 @@
   border-radius: 2rem;
   position: relative;
   margin-bottom: .8rem;
+  -webkit-box-shadow: 5px 5px 10px var(--secondary-color);
+          box-shadow: 5px 5px 10px var(--secondary-color);
 }
 
 #my-projects .projects-list .projects .image:hover::before {
