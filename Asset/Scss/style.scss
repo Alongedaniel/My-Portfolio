@@ -447,7 +447,7 @@ body{
         border-radius: 2rem;
         background-color: var(--color-link);
         opacity: 0.5;
-        z-index: 4;
+        z-index: 2;
         margin-bottom: .8rem;
       }
 
@@ -531,6 +531,7 @@ body{
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 3;
     
     
     .mobile-nav-link{
