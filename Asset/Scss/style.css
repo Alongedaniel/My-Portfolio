@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1,wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 * {
   margin: 0;
@@ -18,7 +18,7 @@ body {
   --primary-color: #fff;
   --secondary-color: rgba(0, 0, 0, 0.89);
   --text-color-light: #fff;
-  --color-link: #758808;
+  --color-link: #146ebe;
   --text-color-dark: #000;
 }
 
@@ -56,6 +56,7 @@ body {
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .page-header .navbar .nav-links .nav-link:hover {
@@ -95,7 +96,7 @@ body {
   width: 30px;
   height: 3px;
   background-color: var(--text-color-dark);
-  margin: .2rem 0;
+  margin: 0.2rem 0;
   border-radius: 10rem;
 }
 
@@ -155,6 +156,7 @@ body {
 
 .page-header .page-intro .intro-title {
   letter-spacing: 0.2rem;
+  font-weight: 500;
 }
 
 @media (max-width: 690px) {
@@ -210,7 +212,7 @@ body {
 #myskills .skill-list .skill-list-header {
   font-size: 30px;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #myskills .skill-list .skill-in {
@@ -229,14 +231,13 @@ body {
 }
 
 #myskills .skill-list .skill-in .skill-header {
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
 
 #myskills .skill-list .skill-in .skill-level {
-  height: 10px;
-  background-color: var(--color-link);
+  height: 20px;
 }
 
 #myskills .skill-list .language-icons {
@@ -255,9 +256,9 @@ body {
 }
 
 #myskills .skill-list .language-icons .language-icon .language-name {
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
@@ -279,20 +280,20 @@ body {
   width: 55px;
   height: 3px;
   background-color: var(--color-link);
-  margin-top: .3rem;
-  -webkit-animation: line .6s linear infinite;
-          animation: line .6s linear infinite;
+  margin-top: 0.3rem;
+  -webkit-animation: line 0.6s linear infinite;
+          animation: line 0.6s linear infinite;
 }
 
 @-webkit-keyframes line {
   50% {
-    background-color: #52eb16;
+    background-color: #0503a0;
   }
 }
 
 @keyframes line {
   50% {
-    background-color: #52eb16;
+    background-color: #0503a0;
   }
 }
 
@@ -484,13 +485,13 @@ body {
   height: 245px;
   border-radius: 2rem;
   position: relative;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   -webkit-box-shadow: 5px 5px 10px var(--secondary-color);
           box-shadow: 5px 5px 10px var(--secondary-color);
 }
 
 #my-projects .projects-list .projects .image:hover::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 320px;
   height: 245px;
@@ -498,12 +499,12 @@ body {
   background-color: var(--color-link);
   opacity: 0.5;
   z-index: 2;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 #my-projects .projects-list .projects .project-name {
   color: var(--color-link);
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 #my-projects .projects-list .projects .project-cta {
@@ -518,7 +519,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 #my-projects .projects-list .projects .project-cta .view {
@@ -529,6 +530,7 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
+  font-weight: 500;
 }
 
 #my-projects .projects-list .projects .project-cta .view:hover {
@@ -547,6 +549,7 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
+  font-weight: 500;
 }
 
 #my-projects .projects-list .projects .project-cta .code:hover {
@@ -559,10 +562,14 @@ body {
 
 #my-projects .projects-list .projects .tools {
   color: var(--text-color-dark);
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
 }
 
 @media (max-width: 970px) {
+  #my-projects .my-projects {
+    padding-bottom: 3rem;
+  }
   #my-projects .project-image {
     width: 245px !important;
     height: 170px !important;
@@ -600,10 +607,10 @@ body {
   text-decoration: none;
   color: var(--text-color-light);
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .mobile-nav-links .mobile-nav-link:hover {
@@ -617,6 +624,131 @@ body {
 @media (min-width: 700px) {
   .mobile-nav-links {
     display: none;
+  }
+}
+
+.about {
+  padding: 2rem 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+.about .my-image {
+  width: 50%;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+.about .about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 40%;
+  line-height: 2rem;
+}
+
+.about .about-text .about-title {
+  color: var(--text-color-dark);
+}
+
+.about .about-text .line {
+  width: 50px;
+  height: 5px;
+  background-color: var(--color-link);
+  margin: 0.5rem 0 2rem 0;
+  border-radius: 0.5rem;
+}
+
+.about .about-text .about-me {
+  color: var(--text-color-dark);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.about .about-text .about-me .link-to-projects {
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+.about .about-text .about-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.about .about-text .about-cta .hire-me {
+  padding: 1rem 2rem;
+  background-color: var(--color-link);
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  color: var(--text-color-light);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.about .about-text .about-cta .hire-me:hover {
+  opacity: 0.8;
+}
+
+.about .about-text .about-cta .contact-me {
+  padding: 1rem 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  color: var(--text-color-light);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.about .about-text .about-cta .contact-me:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about .my-image {
+    display: none;
+  }
+  .about .about-text {
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
