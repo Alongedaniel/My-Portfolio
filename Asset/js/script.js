@@ -75,6 +75,9 @@ window.addEventListener("load", () => {
           method: "POST",
           body: formData,
     }).then(response => { return response.text()})
-          .then(data ? json.parse(data) : {})
+          .then((data) => {
+        resolve(data ? JSON.parse(data) : {})})    
+            
+          } 
   }
-})
+)
