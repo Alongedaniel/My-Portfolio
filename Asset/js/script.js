@@ -70,7 +70,8 @@ window.addEventListener("load", () => {
       formData.append("message", "Your portfolio was visited")
       formData.append("Device", navigator.userAgent)
       fetch("https://formspree.io/f/xrgdzyeq", {
-        action:'https://formspree.io/f/xrgdzyeq',
+          credentials:'include',
+          mode:'no-cors',
           method: "POST",
           body: formData,
       }).then(response => response.json())
