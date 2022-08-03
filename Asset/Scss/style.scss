@@ -26,27 +26,27 @@ a {
 
 :root {
   --primary-color: #fff;
-  --secondary-color: rgba(0, 0, 0, 0.89);
+  --secondary-color: #1a1a1a;
   --text-color-light: #fff;
   --color-link: #146ebe;
   --text-color-dark: #000;
-  --primary-navbar-color: #fff;
-  --secondary-navbar-color: #111;
+  // --primary-navbar-color: #fff;
+  // --secondary-navbar-color: #111;
 }
 
 .dark-mode {
-  --primary-color: rgba(0, 0, 0, 0.89);
+  --primary-color: #1a1a1a;
   --secondary-color: #fff;
   --text-color-light: #000;
   --color-link: #146ebe;
   --text-color-dark: #fff;
-  --primary-navbar-color: #111;
-  --secondary-navbar-color: #fff;
+  // --primary-navbar-color: #111;
+  // --secondary-navbar-color: #fff;
 }
 
 .navbar {
-  background-color: var(--primary-navbar-color);
-  padding: 1rem 5vw;
+  background-color: var(--primary-color);
+  padding: .5rem 5vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,12 +88,12 @@ a {
     .code-icon {
       color: var(--text-color-dark);
       cursor: pointer;
-      font-size: 30px;
+      font-size: 25px;
     }
     .logo {
       color: var(--color-link);
       text-decoration: none;
-      font-size: 30px;
+      font-size: 25px;
       font-family: "Source Sans Pro", sans-serif;
       font-style: italic;
     }
@@ -114,7 +114,6 @@ a {
 }
 @media (max-width: 745px) {
   .navbar {
-    padding: 1rem 5vw;
 
     .nav-links {
       display: none !important;
@@ -615,7 +614,7 @@ a {
   justify-content: space-between;
   padding: 1rem 5vw;
   align-items: center;
-  background-color: var(--primary-navbar-color);
+  background-color: var(--primary-color);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   position: fixed;

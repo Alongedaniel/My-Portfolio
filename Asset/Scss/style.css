@@ -9,15 +9,17 @@
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
-  -webkit-transition: background .4s linear;
-  transition: background .4s linear;
+  -webkit-transition: background 0.4s linear;
+  transition: background 0.4s linear;
 }
 
 body {
   background-color: var(--primary-color);
 }
 
-img, button, a {
+img,
+button,
+a {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -26,27 +28,23 @@ img, button, a {
 
 :root {
   --primary-color: #fff;
-  --secondary-color: rgba(0, 0, 0, 0.89);
+  --secondary-color: #1a1a1a;
   --text-color-light: #fff;
   --color-link: #146ebe;
   --text-color-dark: #000;
-  --primary-navbar-color:#fff;
-  --secondary-navbar-color:#111;
 }
 
 .dark-mode {
-  --primary-color: rgba(0, 0, 0, 0.89);
+  --primary-color: #1a1a1a;
   --secondary-color: #fff;
   --text-color-light: #000;
   --color-link: #146ebe;
   --text-color-dark: #fff;
-  --primary-navbar-color:#111;
-  --secondary-navbar-color:#fff;
 }
 
 .navbar {
-  background-color: var(--primary-navbar-color);
-  padding: 1rem 5vw;
+  background-color: var(--primary-color);
+  padding: .5rem 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +98,7 @@ img, button, a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -109,13 +107,13 @@ img, button, a {
 .navbar .my-title .code-icon {
   color: var(--text-color-dark);
   cursor: pointer;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .navbar .my-title .logo {
   color: var(--color-link);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
 }
@@ -135,9 +133,6 @@ img, button, a {
 }
 
 @media (max-width: 745px) {
-  .navbar {
-    padding: 1rem 5vw;
-  }
   .navbar .nav-links {
     display: none !important;
   }
@@ -638,7 +633,7 @@ img, button, a {
 #my-projects .projects-list .projects .project-image {
   width: 100%;
   height: 245px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   position: relative;
   margin-bottom: 0.4rem;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -650,7 +645,7 @@ img, button, a {
   position: absolute;
   width: 100%;
   height: 245px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: var(--color-link);
   opacity: 0.5;
   z-index: 2;
@@ -742,7 +737,7 @@ img, button, a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--primary-navbar-color);
+  background-color: var(--primary-color);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   position: fixed;
