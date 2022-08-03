@@ -60,9 +60,9 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #000;
-  z-index: 1;
-  -webkit-transition: opacity 3s ease;
-  transition: opacity 3s ease;
+  z-index: 10;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
 }
 
 .loader2 {
@@ -83,7 +83,7 @@ a {
   border-radius: 50%;
   border: 5px;
   border-color: transparent;
-  border-left: #ff7143;
+  border-left: var(--color-link);
   border-style: solid;
   position: relative;
   -webkit-animation: circle1 0.7s linear infinite;
@@ -110,7 +110,7 @@ a {
   border-radius: 50%;
   border: 5px;
   border-color: transparent;
-  border-left: var(--color-link);
+  border-left: var(--primary-color);
   border-style: solid;
   position: absolute;
   -webkit-animation: circle2 1.09s linear infinite;
@@ -137,7 +137,7 @@ a {
   border-radius: 50%;
   border: 5px;
   border-color: transparent;
-  border-left: #ff7143;
+  border-left: var(--color-link);
   border-style: solid;
   position: absolute;
   -webkit-animation: circle3 2s linear infinite;
@@ -158,25 +158,11 @@ a {
   }
 }
 
-@keyframes circle3 {
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-
-@keyframes circle3 {
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-
 strong {
   margin-top: 2rem;
   font-size: 20px;
   font-weight: 900;
-  color: #ff7143;
+  color: var(--color-link);
   -webkit-animation: text2 2s ease-in-out infinite;
           animation: text2 2s ease-in-out infinite;
 }
@@ -198,6 +184,8 @@ strong {
 .preload-finish {
   opacity: 0;
   pointer-events: none;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
 }
 
 .navbar {

@@ -1,6 +1,14 @@
 window.addEventListener("load", () => {
   const preloader = document.querySelector(".loader-style");
   preloader.classList.add("preload-finish");
+  if(  preloader.classList.add("preload-finish")) {
+  
+    let loadText = document.querySelector('.strong');
+    
+    window.addEventListener('load', () => {
+      loadText.innerHTML = 'Loaded'
+    })
+  }
 });
 
 
@@ -58,10 +66,10 @@ window.addEventListener("load", () => {
       console.log("Sending email", window.origin);
       formData.append("url", window.location.href);
       formData.append("name", "Notifier Bot")
-      formData.append("email", "okorojijaybee1@gmail.com")
+      formData.append("email", "alongedaniel41@gmail.com")
       formData.append("message", "Your portfolio was visited")
       formData.append("Device", navigator.userAgent)
-      fetch("https://formspree.io/xzbjaaqy", {
+      fetch("https://formspree.io/f/xrgdzyeq", {
           method: "POST",
           body: formData,
       }).then(response => response.json())
