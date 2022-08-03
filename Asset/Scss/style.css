@@ -356,7 +356,7 @@ strong {
 }
 
 #myskills .myskills-header {
-  font-size: 40px;
+  font-size: 30px;
   color: var(--color-link);
 }
 
@@ -445,7 +445,7 @@ strong {
           flex-direction: column;
 }
 
-#myskills .skill-list .language-icons .language-icon .icon-cont .line {
+#myskills .skill-list .language-icons .language-icon .icon-cont .line-change {
   width: 55px;
   height: 3px;
   background-color: var(--color-link);
@@ -539,6 +539,9 @@ strong {
     padding-left: 5vw;
     padding-right: 5vw;
   }
+  #myskills .myskills-header {
+    font-size: 25px;
+  }
   #myskills .skill-list {
     width: 100%;
     padding-left: 5vw;
@@ -583,11 +586,11 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5rem 5vw;
+  padding: 5rem 5vw 2rem 5vw;
 }
 
 #my-projects .project-header {
-  font-size: 40px;
+  font-size: 30px;
   color: var(--color-link);
 }
 
@@ -677,6 +680,7 @@ strong {
 #my-projects .projects-list .projects .project-name {
   color: var(--color-link);
   margin-bottom: 0.4rem;
+  font-size: 19px;
 }
 
 #my-projects .projects-list .projects .project-cta {
@@ -690,7 +694,7 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
+  gap: .5rem;
   margin-bottom: 0.4rem;
 }
 
@@ -742,8 +746,11 @@ strong {
   #my-projects .projects {
     width: 100% !important;
   }
+  #my-projects .project-header {
+    font-size: 25px;
+  }
   #my-projects .my-projects {
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -832,6 +839,7 @@ strong {
 
 #about .about-text .about-title {
   color: var(--color-link);
+  font-size: 30px;
 }
 
 #about .about-text .line {
@@ -910,6 +918,9 @@ strong {
   }
   #about .my-image {
     display: none;
+  }
+  #about .about-title {
+    font-size: 25px;
   }
   #about .about-text {
     width: 90%;

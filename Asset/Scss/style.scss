@@ -279,7 +279,7 @@ strong {
   color: var(--text-color-dark);
 
   .myskills-header {
-    font-size: 40px;
+    font-size: 30px;
     color: var(--color-link);
   }
 
@@ -339,7 +339,7 @@ strong {
           flex-direction: column;
           // justify-content: center;
 
-          .line {
+          .line-change {
             width: 55px;
             height: 3px;
             background-color: var(--color-link);
@@ -403,6 +403,10 @@ strong {
     padding-left: 5vw;
     padding-right: 5vw;
 
+    .myskills-header{
+      font-size: 25px;
+    }
+
     .skill-list {
       width: 100%;
       padding-left: 5vw;
@@ -442,10 +446,10 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 5vw;
+  padding: 5rem 5vw 2rem 5vw;
 
   .project-header {
-    font-size: 40px;
+    font-size: 30px;
     color: var(--color-link);
   }
 
@@ -515,13 +519,14 @@ strong {
       .project-name {
         color: var(--color-link);
         margin-bottom: 0.4rem;
+        font-size: 19px;
       }
 
       .project-cta {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 1rem;
+        gap: .5rem;
         margin-bottom: 0.4rem;
 
         .view {
@@ -571,8 +576,13 @@ strong {
     .projects {
       width: 100% !important;
     }
+
+    .project-header{
+      font-size: 25px;
+    }
+
     .my-projects {
-      padding-bottom: 3rem;
+      padding-bottom: 1rem;
     }
   }
 }
@@ -646,6 +656,7 @@ strong {
 
     .about-title {
       color: var(--color-link);
+      font-size: 30px;
     }
 
     .line {
@@ -715,6 +726,10 @@ strong {
 
     .my-image {
       display: none;
+    }
+
+    .about-title{
+      font-size: 25px;
     }
 
     .about-text {
