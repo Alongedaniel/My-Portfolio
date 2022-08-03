@@ -1,17 +1,14 @@
 window.addEventListener("load", () => {
   const preloader = document.querySelector(".loader-style");
   preloader.classList.add("preload-finish");
-  if(  preloader.classList.add("preload-finish")) {
-  
-    let loadText = document.querySelector('.strong');
-    
-    window.addEventListener('load', () => {
-      loadText.innerHTML = 'Loaded'
-    })
+  if (preloader.classList.add("preload-finish")) {
+    let loadText = document.querySelector(".strong");
+
+    window.addEventListener("load", () => {
+      loadText.innerHTML = "Loaded";
+    });
   }
 });
-
-
 
 let webClick = document.querySelector(".for-web");
 let appClick = document.querySelector(".for-app");
@@ -58,26 +55,29 @@ themeChanger.onclick = () => {
   audio.play();
 };
 
-
 window.addEventListener("load", () => {
   // send an email to me everytime the page is loaded
-  if (!window.origin.includes("localhost") && !window.origin.includes("http://127.0.0.1")) {
-      const formData = new FormData();
-      console.log("Sending email", window.origin);
-      formData.append("url", window.location.href);
-      formData.append("name", "Notifier Bot")
-      formData.append("email", "alongedaniel41@gmail.com")
-      formData.append("message", "Your portfolio was visited")
-      formData.append("Device", navigator.userAgent)
-      fetch("https://formspree.io/f/xrgdzyeq", {
-          credentials:'include',
-          mode:'no-cors',
-          method: "POST",
-          body: formData,
-    }).then(response => { return response.text()})
-          .then((data) => {
-        resolve(data ? JSON.parse(data) : {})})    
-            
-          } 
+  if (
+    !window.origin.includes("localhost") &&
+    !window.origin.includes("http://127.0.0.1")
+  ) {
+    const formData = new FormData();
+    console.log("Sending email", window.origin);
+    formData.append("url", window.location.href);
+    formData.append("name", "Notifier Bot");
+    formData.append("email", "alongedaniel41@gmail.com");
+    formData.append("message", "Your portfolio was visited");
+    formData.append("Device", navigator.userAgent);
+    fetch("https://formspree.io/f/xrgdzyeq", {
+      credentials: "include",
+      mode: "no-cors",
+      method: "POST",
+      body: JSON.stringify(data),
+    })
+      .then((resp) => resp.json())
+      .then(function (response) {
+        console.info("fetch()", response);
+        return response;
+      });
   }
-)
+});
