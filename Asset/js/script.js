@@ -25,10 +25,20 @@ selectAll.addEventListener("click", function () {
   webClick.style.color = "#000";
 });
 
+let navBar = document.querySelector(".navbar");
+function myFunction() {
+  if (window.scrollY) {
+    navBar.classList.add("fixed-navbar");
+    console.log("it works");
+  } else {
+    navBar.classList.remove("fixed-navbar");
+  }
+}
 
-// let menu = document.querySelector('.bars')
-// let menuBar = document.querySelector('.mobile-nav-links')
-
-// function menuClick() {
-//   menuBar.style.bottom = '0'
-// }
+let themeChanger = document.querySelector(".theme-changer");
+let body = document.body;
+let audio = document.querySelector(".audio");
+themeChanger.onclick = () => {
+  body.classList.toggle("dark-mode");
+  audio.play();
+};

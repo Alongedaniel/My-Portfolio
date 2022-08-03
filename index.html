@@ -12,31 +12,29 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body onscroll="myFunction()">
 
 
     <!-- --------------- PAGE HEADER -------------------- -->
 
 
 
+    <nav class="navbar">
+        <div class="my-title">
+            <i class="fa-solid fa-code code-icon"></i>
+            <h1><a href="./index.html" class="nav-link logo">Dlonge</a></h1>
+        </div>
+        <ul class="nav-links">
+            <li> <a class="nav-link" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="#myskills">My Skills</a> </li>
+            <li><a class="nav-link" href="#my-projects">Projects</a> </li>
+            <li><a href="#about" class="nav-link">About</a> </li>
+            <li><a class="nav-link" href="#">Contact Me</a> </li>
+        </ul>
+        <i class="fa-solid fa-lightbulb theme-changer"></i>
+        <audio controls class="audio" src="./Asset/Images/mixkit-single-classic-click-1116.wav"></audio>
+    </nav>
     <header class="page-header">
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li> <a class="nav-link" href="./index.html">Home</a></li>
-                <li><a class="nav-link" href="#myskills">My Skills</a> </li>
-                <li><a class="nav-link" href="#my-projects">Projects</a> </li>
-                <li><a href="#about" class="nav-link">About</a> </li>
-                <li><a class="nav-link" href="#">Contact Me</a> </li>
-            </ul>
-            <div class="mobile-navbar">
-                <h1 class="logo">Dlonge</h1>
-                <!-- <div class="bars">
-                    <div class="bar" onclick="menuClick()"></div>
-                    <div class="bar middle-bar"></div>
-                    <div class="bar last-bar"></div>
-                </div> -->
-            </div>
-        </nav>
         <div class="page-intro">
             <h2 class="introduction">Hello, I'm</h2>
             <h1 class="my-name">Alonge Daniel</h1>
@@ -49,6 +47,21 @@
 
     <!-- --------------- PAGE HEADER END --------------------  -->
 
+    <!-- --------------------- Mobile navbar ------------------- -->
+
+
+    <ul class="mobile-nav-links">
+        <li> <a class="mobile-nav-link" href="./index.html">Home</a></li>
+        <li><a class="mobile-nav-link" href="#myskills">My Skills</a> </li>
+        <li><a class="mobile-nav-link" href="#my-projects">Projects</a> </li>
+        <li><a href="#about" class="mobile-nav-link">About</a> </li>
+        <li><a class="mobile-nav-link" href="#">Contact Me</a> </li>
+    </ul>
+
+
+
+
+    <!-- --------------------- Mobile navbar end ------------------- -->
 
 
     <!-- ---------------- My Skills ------------------ -->
@@ -269,23 +282,6 @@
 
 
 
-    <!-- --------------------- Mobile navbar ------------------- -->
-
-
-    <ul class="mobile-nav-links">
-        <li> <a class="mobile-nav-link" href="./index.html">Home</a></li>
-        <li><a class="mobile-nav-link" href="#myskills">My Skills</a> </li>
-        <li><a class="mobile-nav-link" href="#my-projects">Projects</a> </li>
-        <li><a href="#about" class="mobile-nav-link">About</a> </li>
-        <li><a class="mobile-nav-link" href="#">Contact Me</a> </li>
-    </ul>
-
-
-
-
-    <!-- --------------------- Mobile navbar end ------------------- -->
-
-
 
     <!-- --------------- About Me --------------------  -->
 
@@ -312,9 +308,11 @@
         </div>
     </sectiion>
 
-
-
     <!-- --------------------- About end ------------------- -->
+
+
+
+
 
     <script src="./Asset/js/script.js"></script>
 </body>
