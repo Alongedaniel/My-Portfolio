@@ -74,7 +74,7 @@ window.addEventListener("load", () => {
           mode:'no-cors',
           method: "POST",
           body: formData,
-    }).then(blob => blob.json())
-          .then(data => console.log(data))
+    }).then(response => { return response.text()})
+          .then(data ? json.parse(data) : {})
   }
 })
