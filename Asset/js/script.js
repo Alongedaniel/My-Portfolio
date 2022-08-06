@@ -13,21 +13,24 @@ webClick.addEventListener("click", function () {
   allWeb.forEach((web) => (web.style.display = "inline-block"));
   allApp.forEach((app) => (app.style.display = "none"));
   webClick.style.color = "#146ebe";
-  appClick.style.color = "#000";
+  appClick.style.color = "var(--text-color-dark)";
+  selectAll.style.color = "var(--text-color-dark)";
 });
 
 appClick.addEventListener("click", function () {
   allApp.forEach((app) => (app.style.display = "inline-block"));
   allWeb.forEach((web) => (web.style.display = "none"));
   appClick.style.color = "#146ebe";
-  webClick.style.color = "#000";
+  webClick.style.color = "var(--text-color-dark)";
+  selectAll.style.color = "var(--text-color-dark)";
 });
 
 selectAll.addEventListener("click", function () {
   allApp.forEach((app) => (app.style.display = "inline-block"));
   allWeb.forEach((web) => (web.style.display = "inline-block"));
-  appClick.style.color = "#000";
-  webClick.style.color = "#000";
+  selectAll.style.color = '#146ebe'
+  webClick.style.color = "var(--text-color-dark)";
+  appClick.style.color = "var(--text-color-dark)";
 });
 
 let navBar = document.querySelector(".navbar");

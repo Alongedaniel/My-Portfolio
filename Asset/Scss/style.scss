@@ -460,17 +460,17 @@ strong {
     list-style: none;
 
     .project-sort {
-      color: var(--color-link);
+      color: var(--text-color-dark);
       cursor: pointer;
       transition: all 0.3s;
       font-weight: 500;
     }
 
     .project-sort:hover {
-      color: var(--text-color-dark);
+      color: var(--color-link);
     }
     .project-sort:focus {
-      color: var(--text-color-dark);
+      color: var(--color-link);
     }
   }
 

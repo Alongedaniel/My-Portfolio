@@ -603,7 +603,7 @@ strong {
 }
 
 #my-projects .project-sort-list .project-sort {
-  color: var(--color-link);
+  color: var(--text-color-dark);
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -611,11 +611,11 @@ strong {
 }
 
 #my-projects .project-sort-list .project-sort:hover {
-  color: var(--text-color-dark);
+  color: var(--color-link);
 }
 
 #my-projects .project-sort-list .project-sort:focus {
-  color: var(--text-color-dark);
+  color: var(--color-link);
 }
 
 #my-projects .projects-list {
