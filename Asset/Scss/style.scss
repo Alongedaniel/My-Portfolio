@@ -116,7 +116,6 @@ a {
   }
 }
 
-
 strong {
   margin-top: 2rem;
   font-size: 20px;
@@ -139,10 +138,11 @@ strong {
 
 //     preloader end
 
+// ----------------- Navbar start -------------------- //
 
 .navbar {
   background-color: var(--primary-color);
-  padding: .5rem 5vw;
+  padding: 0.5rem 5vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -210,12 +210,14 @@ strong {
 }
 @media (max-width: 745px) {
   .navbar {
-
     .nav-links {
       display: none !important;
     }
   }
 }
+
+// -----------------Navbar end --------------------- //@at-root
+
 // --------------- PAGE HEADER -------------------- //
 
 .page-header {
@@ -263,8 +265,6 @@ strong {
       }
     }
   }
-
-  
 }
 
 // ------------------- PAGE HEADER END ------------------- \\
@@ -404,7 +404,7 @@ strong {
     padding-left: 5vw;
     padding-right: 5vw;
 
-    .myskills-header{
+    .myskills-header {
       font-size: 25px;
     }
 
@@ -527,7 +527,7 @@ strong {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: .5rem;
+        gap: 0.5rem;
         margin-bottom: 0.4rem;
 
         .view {
@@ -578,7 +578,7 @@ strong {
       width: 100% !important;
     }
 
-    .project-header{
+    .project-header {
       font-size: 25px;
     }
 
@@ -729,7 +729,7 @@ strong {
       display: none;
     }
 
-    .about-title{
+    .about-title {
       font-size: 25px;
     }
 
@@ -742,3 +742,230 @@ strong {
 }
 
 // --------------------- About end -------------------\\
+
+// --------------------- Contact start ---------------- //
+
+#contact {
+  padding: 2rem 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contact-header {
+    color: var(--color-link);
+    font-size: 30px;
+    margin-bottom: 3rem;
+  }
+
+  .communications {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .form-container {
+      width: 60%;
+
+      .get-in-touch {
+        font-size: 25px;
+        color: var(--text-color-dark);
+        margin-bottom: 2rem;
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .form-input {
+          width: 100%;
+          padding: 0.8rem;
+          margin-bottom: 1rem;
+          outline: none;
+          border-color: #146ebe;
+          background-color: var(--primary-color);
+          color: var(--text-color-dark);
+          font-size: 18px;
+        }
+
+        .form-input::placeholder {
+          color: var(--color-link);
+          font-size: 18px;
+        }
+
+        .send-btn {
+          align-self: center;
+          padding: 1rem 1rem;
+          border-radius: 0.5rem;
+          outline: none;
+          border: none;
+          background-color: var(--color-link);
+          color: var(--text-color-light);
+          cursor: pointer;
+        }
+
+        .send-btn:hover {
+          background-color: var(--text-color-dark);
+        }
+
+        .send-btn:focus {
+          background-color: var(--text-color-dark);
+        }
+      }
+    }
+
+    .details-container {
+      .details-header {
+        font-size: 25px;
+        margin-bottom: 2rem;
+        color: var(--text-color-dark);
+      }
+
+      .detail-item {
+        color: var(--color-link);
+        margin-bottom: 0.5rem;
+      }
+
+      .detail-value {
+        font-size: 18px;
+        color: var(--text-color-dark);
+        text-decoration: none;
+      }
+
+      .socials {
+        display: flex;
+        justify-content: space-evenly;
+
+        .social-container {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .background {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #666;
+            position: relative;
+          }
+
+          .social {
+            position: absolute;
+            font-size: 25px;
+          }
+
+          .instagram {
+            background: linear-gradient(to top, #f2aa00, #ef0198);
+            color: #fff;
+          }
+
+          .github {
+            background: linear-gradient(to top, #070707, #191c20);
+            color: #fff;
+          }
+
+          .linkedin {
+            background-color: #0961b8;
+            color: #fff;
+          }
+          .twitter {
+            background-color: #1c98e5;
+            color: #fff;
+          }
+        }
+
+        .github-hover {
+          position: relative;
+        }
+
+        .github-hover:hover::after {
+          content: "Github";
+          color: var(--text-color-dark);
+          text-decoration: none;
+          position: absolute;
+          bottom: 101%;
+          font-size: 12px;
+        }
+        .linkedin-hover {
+          position: relative;
+        }
+
+        .linkedin-hover:hover::after {
+          content: "Linkedin";
+          color: var(--text-color-dark);
+          text-decoration: none;
+          position: absolute;
+          bottom: 101%;
+          font-size: 12px;
+        }
+        .instagram-hover {
+          position: relative;
+        }
+
+        .instagram-hover:hover::after {
+          content: "Instagram";
+          color: var(--text-color-dark);
+          text-decoration: none;
+          position: absolute;
+          bottom: 101%;
+          font-size: 12px;
+        }
+        .twitter-hover {
+          position: relative;
+        }
+
+        .twitter-hover:hover::after {
+          content: "Twitter";
+          color: var(--text-color-dark);
+          text-decoration: none;
+          position: absolute;
+          bottom: 101%;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-header {
+    font-size: 25px;
+  }
+  .communications {
+    flex-direction: column;
+    align-items: center;
+
+    .form-container {
+      width: 100% !important;
+      margin-bottom: 2rem;
+    }
+
+    .details-container {
+      width: 100% !important;
+    }
+
+    .detail-item {
+      font-size: 16px;
+    }
+
+    .get-in-touch {
+      font-size: 20px;
+    }
+  }
+}
+
+// --------------------Contact end ----------------------- //
+
+.bottom-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  padding: 2rem 5vw;
+}
+
+@media screen and (max-width: 750px) {
+  .bottom-note {
+    padding-bottom: 5rem;
+  }
+}

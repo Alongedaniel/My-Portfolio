@@ -190,7 +190,7 @@ strong {
 
 .navbar {
   background-color: var(--primary-color);
-  padding: .5rem 5vw;
+  padding: 0.5rem 5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,7 +694,7 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
   margin-bottom: 0.4rem;
 }
 
@@ -927,6 +927,285 @@ strong {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+#contact {
+  padding: 2rem 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .contact-header {
+  color: var(--color-link);
+  font-size: 30px;
+  margin-bottom: 3rem;
+}
+
+#contact .communications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#contact .communications .form-container {
+  width: 60%;
+}
+
+#contact .communications .form-container .get-in-touch {
+  font-size: 25px;
+  color: var(--text-color-dark);
+  margin-bottom: 2rem;
+}
+
+#contact .communications .form-container .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#contact .communications .form-container .contact-form .form-input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-color: #146ebe;
+  background-color: var(--primary-color);
+  color: var(--text-color-dark);
+  font-size: 18px;
+}
+
+#contact .communications .form-container .contact-form .form-input::-webkit-input-placeholder {
+  color: var(--color-link);
+  font-size: 18px;
+}
+
+#contact .communications .form-container .contact-form .form-input:-ms-input-placeholder {
+  color: var(--color-link);
+  font-size: 18px;
+}
+
+#contact .communications .form-container .contact-form .form-input::-ms-input-placeholder {
+  color: var(--color-link);
+  font-size: 18px;
+}
+
+#contact .communications .form-container .contact-form .form-input::placeholder {
+  color: var(--color-link);
+  font-size: 18px;
+}
+
+#contact .communications .form-container .contact-form .send-btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-link);
+  color: var(--text-color-light);
+  cursor: pointer;
+}
+
+#contact .communications .form-container .contact-form .send-btn:hover {
+  background-color: var(--text-color-dark);
+}
+
+#contact .communications .form-container .contact-form .send-btn:focus {
+  background-color: var(--text-color-dark);
+}
+
+#contact .communications .details-container .details-header {
+  font-size: 25px;
+  margin-bottom: 2rem;
+  color: var(--text-color-dark);
+}
+
+#contact .communications .details-container .detail-item {
+  color: var(--color-link);
+  margin-bottom: 0.5rem;
+}
+
+#contact .communications .details-container .detail-value {
+  font-size: 18px;
+  color: var(--text-color-dark);
+  text-decoration: none;
+}
+
+#contact .communications .details-container .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#contact .communications .details-container .socials .social-container {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact .communications .details-container .socials .social-container .background {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #666;
+  position: relative;
+}
+
+#contact .communications .details-container .socials .social-container .social {
+  position: absolute;
+  font-size: 25px;
+}
+
+#contact .communications .details-container .socials .social-container .instagram {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f2aa00), to(#ef0198));
+  background: linear-gradient(to top, #f2aa00, #ef0198);
+  color: #fff;
+}
+
+#contact .communications .details-container .socials .social-container .github {
+  background: -webkit-gradient(linear, left bottom, left top, from(#070707), to(#191c20));
+  background: linear-gradient(to top, #070707, #191c20);
+  color: #fff;
+}
+
+#contact .communications .details-container .socials .social-container .linkedin {
+  background-color: #0961b8;
+  color: #fff;
+}
+
+#contact .communications .details-container .socials .social-container .twitter {
+  background-color: #1c98e5;
+  color: #fff;
+}
+
+#contact .communications .details-container .socials .github-hover {
+  position: relative;
+}
+
+#contact .communications .details-container .socials .github-hover:hover::after {
+  content: "Github";
+  color: var(--text-color-dark);
+  text-decoration: none;
+  position: absolute;
+  bottom: 101%;
+  font-size: 12px;
+}
+
+#contact .communications .details-container .socials .linkedin-hover {
+  position: relative;
+}
+
+#contact .communications .details-container .socials .linkedin-hover:hover::after {
+  content: "Linkedin";
+  color: var(--text-color-dark);
+  text-decoration: none;
+  position: absolute;
+  bottom: 101%;
+  font-size: 12px;
+}
+
+#contact .communications .details-container .socials .instagram-hover {
+  position: relative;
+}
+
+#contact .communications .details-container .socials .instagram-hover:hover::after {
+  content: "Instagram";
+  color: var(--text-color-dark);
+  text-decoration: none;
+  position: absolute;
+  bottom: 101%;
+  font-size: 12px;
+}
+
+#contact .communications .details-container .socials .twitter-hover {
+  position: relative;
+}
+
+#contact .communications .details-container .socials .twitter-hover:hover::after {
+  content: "Twitter";
+  color: var(--text-color-dark);
+  text-decoration: none;
+  position: absolute;
+  bottom: 101%;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1100px) {
+  .contact-header {
+    font-size: 25px;
+  }
+  .communications {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .communications .form-container {
+    width: 100% !important;
+    margin-bottom: 2rem;
+  }
+  .communications .details-container {
+    width: 100% !important;
+  }
+  .communications .detail-item {
+    font-size: 16px;
+  }
+  .communications .get-in-touch {
+    font-size: 20px;
+  }
+}
+
+.bottom-note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #666;
+  padding: 2rem 5vw;
+}
+
+@media screen and (max-width: 750px) {
+  .bottom-note {
+    padding-bottom: 5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
