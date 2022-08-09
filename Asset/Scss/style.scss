@@ -305,20 +305,21 @@ strong {
       gap: 3rem;
       margin-left: 1.5rem;
 
-      .skill{
+      .skill {
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: var(--secondary-color);
-        padding:1rem;
-        border-radius: .5rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
         width: 300px;
         max-width: 400px;
-        min-width: 200px;
+        min-width: 100px;
       }
 
-      .website-icon{
+      .website-icon {
         color: var(--color-link);
+        font-size: 25px;
         margin-bottom: 1rem;
       }
 
@@ -390,27 +391,27 @@ strong {
 
           .icon-html {
             color: #e34c26;
-            animation: rotateicon 4s linear infinite;
+            animation: rotateicon 7s linear infinite;
           }
           .icon-css {
             color: #2965f1;
-            animation: rotateicon 4s linear infinite;
+            animation: rotateicon 7s linear infinite;
           }
           .icon-js {
             color: #f0db4f;
-            animation: rotateicon 4s linear infinite;
+            animation: rotateicon 7s linear infinite;
           }
           .icon-react {
             color: #34c5ff;
-            animation: rotateicon2 4s linear infinite;
+            animation: rotateicon2 7s linear infinite;
           }
           .icon-git {
             color: #f1502f;
-            animation: rotateicon2 4s linear infinite;
+            animation: rotateicon2 7s linear infinite;
           }
           .icon-sass {
             color: #fd7088;
-            animation: rotateicon 4s linear infinite;
+            animation: rotateicon 7s linear infinite;
           }
         }
       }

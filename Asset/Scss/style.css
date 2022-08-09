@@ -412,14 +412,15 @@ strong {
           align-items: center;
   background-color: var(--secondary-color);
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   width: 300px;
   max-width: 400px;
-  min-width: 200px;
+  min-width: 100px;
 }
 
 #myskills .skill-list .skill-in .website-icon {
   color: var(--color-link);
+  font-size: 25px;
   margin-bottom: 1rem;
 }
 
@@ -525,38 +526,38 @@ strong {
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon-html {
   color: #e34c26;
-  -webkit-animation: rotateicon 4s linear infinite;
-          animation: rotateicon 4s linear infinite;
+  -webkit-animation: rotateicon 7s linear infinite;
+          animation: rotateicon 7s linear infinite;
 }
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon-css {
   color: #2965f1;
-  -webkit-animation: rotateicon 4s linear infinite;
-          animation: rotateicon 4s linear infinite;
+  -webkit-animation: rotateicon 7s linear infinite;
+          animation: rotateicon 7s linear infinite;
 }
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon-js {
   color: #f0db4f;
-  -webkit-animation: rotateicon 4s linear infinite;
-          animation: rotateicon 4s linear infinite;
+  -webkit-animation: rotateicon 7s linear infinite;
+          animation: rotateicon 7s linear infinite;
 }
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon-react {
   color: #34c5ff;
-  -webkit-animation: rotateicon2 4s linear infinite;
-          animation: rotateicon2 4s linear infinite;
+  -webkit-animation: rotateicon2 7s linear infinite;
+          animation: rotateicon2 7s linear infinite;
 }
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon-git {
   color: #f1502f;
-  -webkit-animation: rotateicon2 4s linear infinite;
-          animation: rotateicon2 4s linear infinite;
+  -webkit-animation: rotateicon2 7s linear infinite;
+          animation: rotateicon2 7s linear infinite;
 }
 
 #myskills .skill-list .language-icons .language-icon .icon-cont .icon-sass {
   color: #fd7088;
-  -webkit-animation: rotateicon 4s linear infinite;
-          animation: rotateicon 4s linear infinite;
+  -webkit-animation: rotateicon 7s linear infinite;
+          animation: rotateicon 7s linear infinite;
 }
 
 @media (max-width: 800px) {
