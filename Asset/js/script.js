@@ -1,7 +1,7 @@
-// window.addEventListener("load", () => {
-//   const preloader = document.querySelector(".loader-style");
-//   preloader.classList.add("preload-finish");
-// });
+window.addEventListener("load", () => {
+  const preloader = document.querySelector(".loader-style");
+  preloader.classList.add("preload-finish");
+});
 
 let webClick = document.querySelector(".for-web");
 let appClick = document.querySelector(".for-app");
