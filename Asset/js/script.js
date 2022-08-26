@@ -84,9 +84,9 @@ function scrollContact() {
     behavior:"smooth"
    })
 }
-<<<<<<< HEAD
 
-=======
+
+
  
 //      Mobile
 
@@ -118,4 +118,3 @@ function mobileScrollContact() {
     behavior:"smooth"
    })
  }
->>>>>>> 323dea59a4e54ed851083b93546e7712b783d31e
