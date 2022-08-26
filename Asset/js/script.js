@@ -1,7 +1,7 @@
-window.addEventListener("load", () => {
-  const preloader = document.querySelector(".loader-style");
-  preloader.classList.add("preload-finish");
-});
+// window.addEventListener("load", () => {
+//   const preloader = document.querySelector(".loader-style");
+//   preloader.classList.add("preload-finish");
+// });
 
 let webClick = document.querySelector(".for-web");
 let appClick = document.querySelector(".for-app");
@@ -49,3 +49,69 @@ themeChanger.onclick = () => {
   body.classList.toggle("dark-mode");
   audio.play();
 };
+
+
+function scrollMySkill() {
+  window.scrollTo({
+    top: 700,
+    left: 0,
+    behavior:"smooth"
+   })
+ }
+
+
+function scrollMyProject() {
+  window.scrollTo({
+    top: 1400,
+    left: 0,
+    behavior:"smooth"
+   })
+ }
+
+
+function scrollAbout() {
+  window.scrollTo({
+    top: 2700,
+    left: 0,
+    behavior:"smooth"
+   })
+}
+ 
+function scrollContact() {
+  window.scrollTo({
+    top: 3250,
+    left: 0,
+    behavior:"smooth"
+   })
+}
+ 
+//      Mobile
+
+function mobileScrollMySkill() {
+  window.scrollTo({
+    top: 700,
+    left: 0,
+    behavior:"smooth"
+   })
+ }
+function mobileScrollMyProject() {
+  window.scrollTo({
+    top: 1940,
+    left: 0,
+    behavior:"smooth"
+   })
+ }
+function mobileScrollAbout() {
+  window.scrollTo({
+    top: 5100,
+    left: 0,
+    behavior:"smooth"
+   })
+ }
+function mobileScrollContact() {
+  window.scrollTo({
+    top: 5800,
+    left: 0,
+    behavior:"smooth"
+   })
+ }
