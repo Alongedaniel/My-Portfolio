@@ -1,7 +1,7 @@
-window.addEventListener("load", () => {
-  const preloader = document.querySelector(".loader-style");
-  preloader.classList.add("preload-finish");
-});
+// window.addEventListener("load", () => {
+//   const preloader = document.querySelector(".loader-style");
+//   preloader.classList.add("preload-finish");
+// });
 
 let webClick = document.querySelector(".for-web");
 let appClick = document.querySelector(".for-app");
@@ -84,4 +84,38 @@ function scrollContact() {
     behavior:"smooth"
    })
 }
+<<<<<<< HEAD
 
+=======
+ 
+//      Mobile
+
+function mobileScrollMySkill() {
+  window.scrollTo({
+    top: 700,
+    left: 0,
+    behavior:"smooth"
+   })
+ }
+function mobileScrollMyProject() {
+  window.scrollTo({
+    top: 1940,
+    left: 0,
+    behavior:"smooth"
+   })
+ }
+function mobileScrollAbout() {
+  window.scrollTo({
+    top: 5100,
+    left: 0,
+    behavior:"smooth"
+   })
+ }
+function mobileScrollContact() {
+  window.scrollTo({
+    top: 5800,
+    left: 0,
+    behavior:"smooth"
+   })
+ }
+>>>>>>> 323dea59a4e54ed851083b93546e7712b783d31e
