@@ -87,34 +87,3 @@ function scrollContact() {
 
 
 
- 
-//      Mobile
-
-function mobileScrollMySkill() {
-  window.scrollTo({
-    top: 700,
-    left: 0,
-    behavior:"smooth"
-   })
- }
-function mobileScrollMyProject() {
-  window.scrollTo({
-    top: 1940,
-    left: 0,
-    behavior:"smooth"
-   })
- }
-function mobileScrollAbout() {
-  window.scrollTo({
-    top: 5100,
-    left: 0,
-    behavior:"smooth"
-   })
- }
-function mobileScrollContact() {
-  window.scrollTo({
-    top: 5800,
-    left: 0,
-    behavior:"smooth"
-   })
- }
