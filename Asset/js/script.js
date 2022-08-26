@@ -49,3 +49,39 @@ themeChanger.onclick = () => {
   body.classList.toggle("dark-mode");
   audio.play();
 };
+
+
+function scrollMySkill() {
+  window.scrollTo({
+    top: 700,
+    left: 0,
+    behavior:"smooth"
+   })
+ }
+
+
+function scrollMyProject() {
+  window.scrollTo({
+    top: 1400,
+    left: 0,
+    behavior:"smooth"
+   })
+ }
+
+
+function scrollAbout() {
+  window.scrollTo({
+    top: 2700,
+    left: 0,
+    behavior:"smooth"
+   })
+}
+ 
+function scrollContact() {
+  window.scrollTo({
+    top: 3250,
+    left: 0,
+    behavior:"smooth"
+   })
+}
+
