@@ -411,6 +411,16 @@ strong {
   -webkit-animation: rotateicon 7s linear infinite;
           animation: rotateicon 7s linear infinite;
 }
+#myskills .skill-list .language-icons .language-icon .icon-cont .icon-c {
+  width: 55px;
+  -webkit-animation: rotateicon2 7s linear infinite;
+          animation: rotateicon2 7s linear infinite;
+}
+#myskills .skill-list .language-icons .language-icon .icon-cont .icon-sh {
+  width: 55px;
+  -webkit-animation: rotateicon 7s linear infinite;
+          animation: rotateicon 7s linear infinite;
+}
 
 @media (max-width: 800px) {
   #myskills {
