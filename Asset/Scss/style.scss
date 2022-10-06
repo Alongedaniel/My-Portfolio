@@ -302,6 +302,7 @@ strong {
     .skill-in {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       align-items: center;
       gap: 3rem;
       margin-left: 1.5rem;
