@@ -702,6 +702,9 @@ strong {
     width: 90%;
     align-items: center;
   }
+  #about .about-cta {
+    flex-direction: column;
+  }
 }
 #contact {
   padding: 2rem 10vw;
