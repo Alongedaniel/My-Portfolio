@@ -180,12 +180,13 @@ strong {
   text-transform: uppercase;
   cursor: pointer;
   color: var(--color-link);
-  transition: color 0.2s;
+  transition: all 0.2s linear;
   text-decoration: none;
   font-weight: 500;
 }
 .navbar .nav-links .nav-link:hover {
   color: var(--text-color-dark);
+  letter-spacing: 1px;
 }
 .navbar .nav-links .nav-link:focus {
   color: var(--text-color-dark);
@@ -614,11 +615,10 @@ strong {
   }
 }
 #about {
-  padding: 2rem 5vw;
+  padding: 3.5rem 2rem 5vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 2rem;
 }
 #about .my-image {
   width: 50%;
@@ -628,8 +628,8 @@ strong {
 #about .about-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 40%;
+  align-items: center;
+  width: 80%;
   line-height: 2rem;
 }
 #about .about-text .about-title {
