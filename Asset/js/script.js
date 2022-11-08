@@ -51,39 +51,41 @@ themeChanger.onclick = () => {
 };
 
 
-function scrollMySkill() {
-  window.scrollTo({
-    top: 700,
-    left: 0,
-    behavior:"smooth"
-   })
- }
+// function scrollAbout() {
+//   window.scrollTo({
+//     top: 600,
+//     left: 0,
+//     behavior:"smooth"
+//    })
+//  }
 
 
-function scrollMyProject() {
-  window.scrollTo({
-    top: 1400,
-    left: 0,
-    behavior:"smooth"
-   })
- }
+// function scrollMySkill() {
+//   window.scrollTo({
+//     top: 1100,
+//     left: 0,
+//     behavior:"smooth"
+//    })
+//  }
 
 
-function scrollAbout() {
-  window.scrollTo({
-    top: 2700,
-    left: 0,
-    behavior:"smooth"
-   })
-}
+// function scrollMyProject() {
+//   window.scrollTo({
+//     top: 2000,
+//     left: 0,
+//     behavior:"smooth"
+//    })
+// }
  
-function scrollContact() {
-  window.scrollTo({
-    top: 3250,
-    left: 0,
-    behavior:"smooth"
-   })
-}
+// function scrollContact() {
+//   window.scrollTo({
+//     top: 3250,
+//     left: 0,
+//     behavior:"smooth"
+//    })
+// }
 
-
+// function redirect() {
+//   window.location = "#myskills";
+// }
 
